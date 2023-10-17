@@ -144,6 +144,7 @@ def handle_response(message, name="Zuzia") -> str:
              BINGAPIKEY]
     redo = 3
     temp = "url"
+    return bingPicture(prompt_generation(Nmessage, name=name), auths[redo-1])
     while redo:
         print("Próbuję. auth numer to: " + str(redo-1))
         try:
