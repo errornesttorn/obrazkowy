@@ -144,7 +144,8 @@ def handle_response(message, name="Zuzia") -> str:
              BINGAPIKEY]
     redo = 3
     temp = "url"
-    return bingPicture(prompt_generation(Nmessage, name=name), auths[redo-1])
+    temp = bingPicture(prompt_generation(Nmessage, name=name), auths[redo-1])
+    return temp
     while redo:
         print("Próbuję. auth numer to: " + str(redo-1))
         try:
@@ -160,7 +161,8 @@ def handle_response(message, name="Zuzia") -> str:
 
 # Send messages
 async def send_message(message, name, user_message, is_private):
-    try:
+    url = handle_response(user_message, name) # normalnie tu tego nie ma
+    """try:
         url = handle_response(user_message, name)
         if url == "url":
             await message.channel.send("Nie udało się wybingować ani jednego linku. Jest to conajmniej sus")
@@ -168,7 +170,7 @@ async def send_message(message, name, user_message, is_private):
             await message.channel.send("Link jest jakiś pojebany. Prawdopodobnie nie jest nawet linkiem tylko całą stroną internetową. Spróbuj ponownie czy coś")
     except:
         await message.channel.send("Coś się spierdoliło podczas generowania obrazka. Spróbuj ponownie czy coś")
-        return
+        return"""
     # Get the response from the url
     try:
         response = requests.get(url)
