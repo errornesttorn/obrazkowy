@@ -87,7 +87,8 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
         if password != THEPASS:
             self.wfile.write("Input a correct password")
             return
-        tlumaczenie = translate(content)
+        tlumaczenie = content
+        # tlumaczenie = translate(content)
         # Write the content to the body
         self.wfile.write(tlumaczenie)
 
