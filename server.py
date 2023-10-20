@@ -12,9 +12,9 @@ OPENAIAPIKEY += input("Input the THEPASS: ")
 
 openai.api_key = OPENAIAPIKEY
 
-def completion_api(prompt: str, engine: str="gpt-3.5-turbo-instruct",\
-                    temperature:float | int=0.0, max_new_tokens: int=1024,\
-                    stop: list | None=None) -> str:
+def completion_api(prompt, engine: str="gpt-3.5-turbo-instruct",\
+                    temperature=0.0, max_new_tokens: int=1024,\
+                    stop=None) -> str:
     try:
         komplicja = openai.Completion.create(
             engine=engine,
