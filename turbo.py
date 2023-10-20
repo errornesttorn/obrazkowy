@@ -6,6 +6,8 @@ import openai
 import requests
 import BingImageCreator
 
+print("Wersja z 20 października 2023")
+
 OPENAIAPIKEY = "sk-EBELEgGQoAl5Czm5BFVxT3BlbkFJpIOSzKvL5E"
 DISCORDTOKEN = 'MTEwMzMxNDEwMDg0ODY5NzM5NQ.Gpa4_P.8GA-9-mNechsER0RoMYmKnHYa9cF'
 BINGAPIKEY = "1RyTnuvfpTRQyOg1ih4Dg7u0U9PkRNKVXkW87pKjw6hT9Gq-jEiEJJpvYbGfM78Rmm5R5kB64ArgUHdsUOX1lD38cxuQJZ10k7AX_CmGU8397teGg3VbEsZmkTAZxcz9jYBmXpCHgV0DOAVNlg9T606R_o5Px2gufzLm8WbcbEYsiMnGvuyAsCSN_FJFgeYJM1S4xkl2Z2v7yV9J8-hikPhSK_rf4SI-M8"
