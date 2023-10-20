@@ -93,8 +93,8 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
         self.wfile.write(tlumaczenie)
 
 # Create a server object using the handler class and a port number
-server = http.server.HTTPServer(("", 7000), MyHandler)
+server = http.server.HTTPServer(("", 80), MyHandler)
 
 # Start the server and print a message
-print("Server running on port 7000")
+print("Server running on port 80")
 server.serve_forever()
