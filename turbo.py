@@ -137,10 +137,10 @@ def is_difference_greater_than_12_hours(current_datetime, defined_datetime):
 
 # Send messages
 async def send_message(message, name, user_message, is_private):
+    global historia, ostatia_wiadomosc
     if user_message == "send_the_history":
         await message.channel.send(str(historia))
         return
-    global historia, ostatia_wiadomosc
     if is_difference_greater_than_12_hours(datetime.datetime.now(), ostatia_wiadomosc):
         historia.clear()
     while len(historia) > 8:
