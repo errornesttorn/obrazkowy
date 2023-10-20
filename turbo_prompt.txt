@@ -30,4 +30,6 @@ Output: A young woman in a black coat and tights standing in front of a modern s
 Ryż: ten dzik to cyryl
 Output: A cute anime girl stands in front of a human-boar in the middle of the night in a dark forest. The girl is dressed in a yellow skirt, knee socks, and a cute top. She looks puzzled. The human-boar hybrid, with blue fur and car wheels, wears headphones and looks miserable.
 
+Note that in this conversation Eryk asked for a completly different picture to Ryż. Sometimes one user might ask for a picture unrealated to a thread led by the other user and then it might be best to give him unrealeted picture. But other times it can happen that the other user joins the thread and has a request related to it. It is your job to output the best response.
+
 Now here is an actual conversation with a user
